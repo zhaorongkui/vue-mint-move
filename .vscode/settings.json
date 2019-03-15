@@ -1,0 +1,6 @@
+{
+  "prettier.semi": false,
+  "prettier.singleQuote": true,
+  "git.ignoreLimitWarning": true,
+  "vetur.validation.template": false
+}
