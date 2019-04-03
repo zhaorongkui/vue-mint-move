@@ -23,15 +23,16 @@
 
         <mt-tab-container-item id="外卖">
           <mt-cell
-            v-for="(n,key) in 10"
+            v-for="n in 10 "
+            :key="n.text"
             :title="'餐厅 ' + n"
-            :item=key
           />
         </mt-tab-container-item>
 
         <mt-tab-container-item id="订单">
           <mt-cell
             v-for="n in 5"
+            :key="n.text"
             :title="'订单 ' + n"
           />
         </mt-tab-container-item>
@@ -39,6 +40,7 @@
         <mt-tab-container-item id="发现">
           <mt-cell
             v-for="n in 7"
+            :key="n.text"
             :title="'发现 ' + n"
           />
         </mt-tab-container-item>
@@ -48,6 +50,7 @@
             <!-- cell -->
             <mt-cell
               v-for="n in 12"
+              :key="n.text"
               :title="'我的 ' + n"
             />
           </div>
