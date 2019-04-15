@@ -39,14 +39,14 @@
       </mt-field>
       <!-- 免费注册块 -->
       <div class="registerDiv">
-        <span>免费注册</span>
+        <span><router-link to="/register">免费注册</router-link></span>
         <span v-show="forgetPassShowroNot">忘记密码</span>
       </div>
       <!-- 登录和切换登录方式块 -->
       <div>
         <mt-button
           size="large"
-          class="mybutton"
+          class="mybutton1"
           @click.native="login"
         >
           登录
@@ -54,7 +54,7 @@
         <mt-button
           size="large"
           type="primary"
-          class="mybutton"
+          class="mybutton2"
           @click.native="changeLoginMethod"
         >{{defaultAccountText}}</mt-button>
       </div>
@@ -141,9 +141,9 @@ export default {
   background-image: linear-gradient(180deg, #fff, #fff 0%, transparent 0%);
 }
 /* 输入框底边框样式 */
-.mint-cell-wrapper {
+/* .mint-cell-wrapper {
   border-bottom: 1px solid #ff5000;
-}
+} */
 /* 修改按钮按钮下的默认颜色 */
 .mint-button::after {
   background-color: transparent;
@@ -156,6 +156,9 @@ export default {
 /* 输入框边距 */
 .myinput {
   margin-top: 30px;
+  background-image: linear-gradient(180deg, #fff, #fff 0%, transparent 0%);
+   border-bottom: 1px solid #ff5000;
+   border-top: 0px solid #ff5000;
 }
 /* 获取短信验证码字体颜色 */
 .getCode {
@@ -176,18 +179,24 @@ export default {
   color: #555;
 }
 /* 登录短信验证按钮边距 */
-.mybutton {
+.mybutton1 {
   margin-top: 20px;
-}
-/* 修改默认 butoon 的样式 达到和淘宝登录一样 */
-.mint-button--default {
   background: -webkit-linear-gradient(left, #ff9000, #ff5000) no-repeat;
   border-radius: 25px;
   color: #fff;
   height: 48px;
 }
+/* 修改默认 butoon 的样式 达到和淘宝登录一样 */
+/* .mint-button--default {
+  background: -webkit-linear-gradient(left, #ff9000, #ff5000) no-repeat;
+  border-radius: 25px;
+  color: #fff;
+  height: 48px;
+} */
 /* 同上 */
-.mint-button--primary {
+/* .mint-button--primary { */
+.mybutton2 {
+  margin-top: 20px;
   border-radius: 25px;
   height: 48px;
   background-color: transparent;
